@@ -1,10 +1,11 @@
 import React from 'react';
 import './MyFirstComponent.css';
-export const MyFirstComponent = () => {
+export const MyFirstComponent = (props) => {
     return(
         <>
             <h1 className ="title">
-                My first component!
+                {props.name}
+                {props.age}
             </h1>
         </>
     )
